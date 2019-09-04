@@ -209,7 +209,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # enable nat scroll and tap to click
 exec --no-startup-id xinput set-prop 16 288 1
 exec --no-startup-id xinput set-prop 16 310 1
-
+exec --no-startup-id xinput set-prop 12 300 1
 # start gnome-keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components-secret
 
