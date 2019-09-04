@@ -212,6 +212,7 @@ exec --no-startup-id xinput set-prop 16 310 1
 exec --no-startup-id xinput set-prop 12 300 1
 # start gnome-keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components-secret
+exec --no-startup-id nm-applet
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
