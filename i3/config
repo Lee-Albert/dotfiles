@@ -226,6 +226,9 @@ for_window [class="^.*"] border pixel 2
 # start compton
 exec --no-startup-id compton
 
+# set background image
+exec --no-startup-id feh --big-fill ~/Pictures/Wallpapers/mountainwallpaper.jpg
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
