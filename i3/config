@@ -242,6 +242,9 @@ exec --no-startup-id xinput set-prop 12 300 1
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components-secret
 exec --no-startup-id nm-applet
 
+# flameshot screenshot setup
+bindsym Shift+Print exec flameshot gui
+bindsym Print exec flameshot full -p ~/Pictures/Screenshots
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
