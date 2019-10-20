@@ -55,6 +55,8 @@ bindsym $mod+Shift+q kill
 # Using the rofi d-menu
 bindsym $mod+d exec --no-startup-id rofi -show run -display-run ""
 
+# Using rofi ssh menu
+bindsym $mod+s exec --no-startup-id rofi -show ssh
 # change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -89,7 +91,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -238,9 +240,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 exec --no-startup-id xinput set-prop 16 288 1
 exec --no-startup-id xinput set-prop 16 310 1
 exec --no-startup-id xinput set-prop 12 300 1
+exec --no-startup-id xinput set-prop 12 299 1
 # start gnome-keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components-secret
 exec --no-startup-id nm-applet
+
+# enable brightness changing
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # flameshot screenshot setup
 bindsym Control+Print exec flameshot gui
