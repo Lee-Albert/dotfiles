@@ -247,8 +247,8 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components-secret
 exec --no-startup-id nm-applet
 
 # enable brightness changing
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 3
+bindsym XF86MonBrightnessDown exec xbacklight -dec 3
 
 # flameshot screenshot setup
 bindsym Control+Print exec flameshot gui
