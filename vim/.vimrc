@@ -3,3 +3,4 @@ set number
 set tabstop=4
 set mouse=a
 set relativenumber
+set laststatus=2
