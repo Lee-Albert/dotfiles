@@ -242,13 +242,16 @@ exec --no-startup-id xinput set-prop 16 288 1
 exec --no-startup-id xinput set-prop 16 310 1
 exec --no-startup-id xinput set-prop 12 300 1
 exec --no-startup-id xinput set-prop 12 299 1
+exec --no-startup-id xinput set-prop 16 287 1
+# enable tap to click
+exec --no-startup-id xinput set-prop 16 309 1
 # start gnome-keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components-secret
 exec --no-startup-id nm-applet
 
 # enable brightness changing
-bindsym XF86MonBrightnessUp exec xbacklight -inc 3
-bindsym XF86MonBrightnessDown exec xbacklight -dec 3
+bindsym XF86MonBrightnessUp exec xbacklight -inc 1
+bindsym XF86MonBrightnessDown exec xbacklight -dec 1
 
 # flameshot screenshot setup
 bindsym Control+Print exec flameshot gui
