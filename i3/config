@@ -245,6 +245,7 @@ exec --no-startup-id xinput set-prop 12 299 1
 exec --no-startup-id xinput set-prop 16 287 1
 exec --no-startup-id xinput set-prop 12 301 1
 exec --no-startup-id xinput set-prop 12 315 1
+exec --no-startup-id xinput set-prop 16 303 1
 # enable tap to click
 exec --no-startup-id xinput set-prop 16 309 1
 # start gnome-keyring
